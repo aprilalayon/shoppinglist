@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
-import './App.css';
+import './styles/App.css';
 import ShoppingList from './ShoppingList';
+import Background from './images/paper.png';
+
+var bgStyle = {
+  backgroundImage: `url(${Background})`
+};
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       itemInput: '',
-      shoppingList: []
+      shoppingList: [],
     };
 
     this.inputChange = this.inputChange.bind(this);
@@ -43,15 +48,18 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div 
+        className="wrapper"
+        style={ bgStyle }
+      >
         <form onSubmit={this.formSubmit}>
-          <h1>April's Shopping List</h1>
+          <h1>Today's Checklist</h1>
               <input 
                 type="text"
                 placeholder="Enter an item"
                 value={this.state.itemInput} 
                 onChange={this.inputChange} />
-            <button type="submit" onClick={this.formSubmit} >Add to shopping list</button>
+            <button type="submit" onClick={this.formSubmit} >Add to list</button>
         </form>
         
         <ShoppingList 
