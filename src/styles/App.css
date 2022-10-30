@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+html, body, #root, .App {
+  height: 100%;
+  font-family: 'Arvo', serif;
+}
+
+.wrapper {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+}
+
+form {
+  display: inline-block;
+  margin-top: 50px;
+}
+
+input {
+  font-size: 20px;
+  margin-right: 20px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 5px 10px;
+  max-width: 225px;
+}
+
+button {
+  font-size: 15px;
+  background-color: teal;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 3px;
+}
+
+.ShoppingList ul {
+  list-style-type: none;
+  width: 300px;
+  margin: 50px auto;
+}
+
+.ShoppingList ul li {
+  list-style-type: none;
+  background-color:  beige;
+}
+.ShoppingList ul li p {
+  clear: both;
+  float: left;
+  font-weight: bold;
+}
+
+.ShoppingList ul li button {
+  float: right;
+}
