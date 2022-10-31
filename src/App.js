@@ -53,7 +53,7 @@ class App extends Component {
         style={ bgStyle }
       >
         <form onSubmit={this.formSubmit}>
-          <h1>Today's Checklist</h1>
+          <h1>Today's Shopping List</h1>
               <input 
                 type="text"
                 placeholder="Enter an item"
